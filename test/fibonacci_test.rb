@@ -12,11 +12,11 @@ class FibonacciTest < Minitest::Test
     assert @fibby.fib(1) == 1
   end
 
-  def test_fib_pos_5
+  def test_fib_pos_five
     assert @fibby.fib(5) == 5
   end
 
-  def test_fib_pos_100
-    assert @fibby.fib(100) == 354224848179261915075
+  def test_fib_pos_one_hundred
+    assert @fibby.fib(100) == 354_224_848_179_261_915_075
   end
 end
