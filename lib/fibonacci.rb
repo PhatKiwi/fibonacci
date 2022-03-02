@@ -11,6 +11,13 @@ class Fibonacci
 
     @memo[pos] ||= (fib(pos - 2) + fib(pos - 1))
   end
+
+  def print_the_fib(pos)
+    (1..pos).each do |n|
+      puts fib(n)
+      puts ''
+    end
+  end
 end
 
-puts Fibonacci.new.fib(10_000)
+puts "the answer: #{Fibonacci.new.fib(17_468)}"
